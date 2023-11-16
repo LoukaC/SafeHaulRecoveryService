@@ -100,7 +100,6 @@ export const competences = [
   },
 ] as const;
 
-
 export const socials = [
    {
     name: "WhatsApp",

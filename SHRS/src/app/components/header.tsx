@@ -19,7 +19,7 @@ export default function Header() {
 
 
   return (
-    <header className='fixed w-full bg-orange-50 h-24 z-[99] lg:w-[70%] lg:left-1/2 lg:-translate-x-1/2'>
+    <header className='fixed w-full bg-orange-50 h-24 z-[99] lg:w-[80%] lg:left-1/2 lg:-translate-x-1/2'>
         <nav className='h-full w-full'>
             <div className='flex justify-between items-center h-full'>
                 <Link href='/'>
