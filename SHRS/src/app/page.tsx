@@ -1,9 +1,11 @@
 import About from "./components/about";
+import Home from "./components/home";
 
 
 export default function Page() {
   return (
-    <main className=" h-[5000px] flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center pt-36 md:pt-28">
+      <Home />
       <About />
     </main>
   )

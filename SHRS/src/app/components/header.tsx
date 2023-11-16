@@ -19,7 +19,7 @@ export default function Header() {
 
 
   return (
-    <header className='fixed w-full bg-transparent h-24'>
+    <header className='fixed w-full bg-orange-50 h-24 z-[99]'>
         <nav className='h-full w-full'>
             <div className='flex justify-between items-center h-full'>
                 <Link href='/'>
@@ -33,7 +33,7 @@ export default function Header() {
                     />
                 </Link>
                 <div>
-                    <ul className='hidden text-sm sm:flex gap-2 mr-6 md:gap-4 md:text-lg transition '>
+                    <ul className='hidden text-sm md:flex gap-2 mr-6 md:gap-4 md:text-lg transition '>
                         {links.map(link => (
                             <li key={link.hash}>
                                     <Link href={link.hash}>
@@ -45,20 +45,20 @@ export default function Header() {
                     <div>
                         { showMenu ?(
                             <AiOutlineClose
-                                className='sm:hidden text-2xl cursor-pointer mr-6'
+                                className='md:hidden text-2xl cursor-pointer mr-6'
                                 cursor='pointer'
                                 onClick={handleMenu}
                             />
                         ) : (
                             <AiOutlineMenu
-                                className='sm:hidden text-2xl cursor-pointer mr-6'
+                                className='md:hidden text-2xl cursor-pointer mr-6'
                                 onClick={handleMenu}
                          />
                         )}   
                     </div>        
                     <div className={
                         showMenu 
-                        ? 'fixed right-[50%] translate-x-[50%] top-24 w-[90%] h-12 bg-orange-200 rounded-lg shadow-2xl' 
+                        ? 'fixed right-[50%] translate-x-[50%] top-[4.8rem] w-[90%] h-12 bg-orange-200 rounded-lg shadow-md' 
                         : 'hidden'}
                     >   
                             <div className='fixed w-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2  '>
