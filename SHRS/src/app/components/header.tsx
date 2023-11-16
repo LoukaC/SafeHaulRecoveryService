@@ -19,14 +19,14 @@ export default function Header() {
 
 
   return (
-    <header className='fixed w-full bg-orange-50 h-24 z-[99]'>
+    <header className='fixed w-full bg-orange-50 h-24 z-[99] lg:w-[70%] lg:left-1/2 lg:-translate-x-1/2'>
         <nav className='h-full w-full'>
             <div className='flex justify-between items-center h-full'>
                 <Link href='/'>
                     <Image 
                         src='/logo.png' 
                         alt='logo SHRS' 
-                        width={300} 
+                        width={250} 
                         height={100} 
                         priority={true} 
                         className='cursor-pointer'
@@ -58,7 +58,7 @@ export default function Header() {
                     </div>        
                     <div className={
                         showMenu 
-                        ? 'fixed right-[50%] translate-x-[50%] top-[4.8rem] w-[90%] h-12 bg-orange-200 rounded-lg shadow-md' 
+                        ? 'fixed right-[50%] translate-x-[50%] top-[4.8rem] w-[20rem] h-12 bg-orange-200 rounded-lg shadow-md' 
                         : 'hidden'}
                     >   
                             <div className='fixed w-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2  '>
