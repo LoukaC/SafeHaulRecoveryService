@@ -151,3 +151,20 @@ export const contacts = [
   }
   
 ] as const;
+
+export const deliveries = [
+  { 
+    name: "deliverie1", 
+    imageUrl: livraison1,
+  },
+  { 
+    name: "deliverie2", 
+    imageUrl: livraison1,
+  },
+  { 
+    name: "deliverie3", 
+    imageUrl: livraison1,
+  },
+
+  
+] as const;
