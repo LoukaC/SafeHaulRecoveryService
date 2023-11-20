@@ -5,7 +5,7 @@ import Work from "./components/work";
 
 export default function Page() {
   return (
-    <main className=" h-[3000px] flex-col justify-center pt-36 md:pt-28">
+    <main className=" h-[3000px] flex-col justify-center pt-16 md:pt-8">
       <Home />
       <About />
       <Work />
