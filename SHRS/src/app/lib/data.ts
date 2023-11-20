@@ -22,12 +22,8 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Deliveries",
-    hash: "#deliveries",
-  },
-  {
-    name: "Testimonies",
-    hash: "#testimonies",
+    name: "Work",
+    hash: "#work",
   },
   {
     name: "Contact",
@@ -103,22 +99,27 @@ export const competences = [
 export const socials = [
    {
     name: "WhatsApp",
+    ref: "https://wa.me/",
     icon: React.createElement(FaWhatsappSquare),
   },
   {
     name: "Facebook",
+    ref: "https://facebook.com/",
     icon: React.createElement(FaFacebookSquare),
   },
   {
     name: "LinkedIn",
+    ref: "https://linkedin.com/",
     icon: React.createElement(FaLinkedin),
   },
   {
     name: "Twitter",
+    ref: "https://twitter.com/",
     icon: React.createElement(FaTwitterSquare),
   },
   {
     name: "Instagram",
+    ref:"https://instagram.com/",
     icon: React.createElement(FaInstagramSquare),
   },
   
@@ -159,12 +160,29 @@ export const deliveries = [
   },
   { 
     name: "deliverie2", 
-    imageUrl: livraison1,
+    imageUrl: livraison2,
   },
   { 
     name: "deliverie3", 
-    imageUrl: livraison1,
+    imageUrl: livraison3,
   },
 
   
 ] as const;
+
+export const testimonies = [
+  { 
+    name: "testimonies1", 
+    imageUrl: livraison4,
+  },
+  { 
+    name: "testimonies2", 
+    imageUrl: livraison4,
+  },
+  { 
+    name: "testimonies3", 
+    imageUrl: livraison3,
+  },
+
+  
+] as const
