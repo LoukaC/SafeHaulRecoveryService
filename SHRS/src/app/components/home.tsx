@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <section id='home' className='flex justify-center items-center pb-32'>
+    <section id='home' className='flex justify-center items-center mb-32'>
         <CarouselSlider 
           useKeyboardArrows={true} 
           showThumbs={false} 

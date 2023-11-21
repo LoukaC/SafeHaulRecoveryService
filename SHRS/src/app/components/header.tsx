@@ -12,7 +12,7 @@ export default function Header() {
     const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className='flex justify-center items-center w-full bg-orange-50 h-24 '>
+    <header className='fixed z-10 flex justify-center items-center w-full bg-orange-50 h-24 '>
         <nav className='flex-col w-full h-full'>
             <div className='flex justify-between items-center h-full w-full'>
                 <Link href='/'>

@@ -6,7 +6,7 @@ import Competence from './competence'
 
 export default function About() {
   return (
-    <section id='about' className='mx-5 mb-28'>
+    <section id='about' className='mx-5 mb-32'>
         <SectionHeading>About Us</SectionHeading>
         <div className='text-center'>
           <h3 className='capitalize text-xl mb-3 font-medium'>leading haulage company</h3>

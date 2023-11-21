@@ -4,13 +4,12 @@ import { socials } from '../lib/data'
 export default function Footer() {
   return (
     <footer className='mb-4 px4 text-center'>
-        <p className='text-xl flex justify-center items-center mb-3'>
+        <p className='text-xl flex justify-center items-center mb-1'>
             {socials.map(social => (
                 <a 
                     key={social.name} 
                     href={social.ref} 
                     target='_blank' 
-        
                     className=''
                 >
                     {social.icon}
