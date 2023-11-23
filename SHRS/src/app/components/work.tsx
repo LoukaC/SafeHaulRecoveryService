@@ -6,7 +6,7 @@ import CarouselSliderWork from './carousel-slider-work'
 
 export default function Work() {
   return (
-    <section id='work' className='flex-col justify-center items-center mb-32'>
+    <section id='work' className='flex-col justify-center items-center mb-32 scroll-mt-36'>
         <SectionHeading>Our work</SectionHeading>
         <div className='flex flex-col justify-center items-center gap-10 md:gap-28 md:flex-row'>
           <CarouselSliderWork title='our deliveries' ListToMap={deliveries} />

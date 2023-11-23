@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <header className='fixed z-10 flex justify-center items-center w-full bg-orange-50 h-24 '>
-        <nav className='flex-col w-full h-full'>
-            <div className='flex justify-between items-center h-full w-full'>
+        <nav className='flex-col w-[60rem] h-24'>
+            <div className='flex flex-row justify-between items-center h-full'>
                 <Link href='/'>
                     <Image 
                         src='/logo.png' 
@@ -48,7 +48,7 @@ export default function Header() {
              <motion.div 
                 className={
                    isOpen 
-                    ? 'h-12 bg-orange-200 rounded-lg shadow-md ' 
+                    ? 'h-12 z-10 bg-orange-200 rounded-lg shadow-md -mt-4' 
                     : 'hidden'}
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -100 }}   

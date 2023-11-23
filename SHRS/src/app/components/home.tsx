@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <section id='home' className='flex justify-center items-center mb-32'>
+    <section id='home' className='flex justify-center items-center mb-32 pt-36 md:pt-24'>
         <CarouselSlider 
           useKeyboardArrows={true} 
           showThumbs={false} 
@@ -16,7 +16,7 @@ export default function Home() {
           className='w-[90%] sm:-w[60rem] lg:w-[50rem]' 
           autoPlay 
           infiniteLoop 
-          showArrows={true} 
+          showArrows={false} 
           showStatus={false} 
           showIndicators={false}
       >

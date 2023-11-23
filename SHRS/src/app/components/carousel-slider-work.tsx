@@ -16,7 +16,7 @@ type CarouselSliderWorkProps = {
 export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWorkProps) {
   return (
     <div>
-        <h3 className='capitalize text-center mb-3'>{title}</h3>
+        <h3 className='capitalize text-center font-medium mb-3'>{title}</h3>
         <CarouselSlider 
             useKeyboardArrows={true} 
             showThumbs={false} 
@@ -24,7 +24,7 @@ export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWor
             className='max-w-[15rem]'
             autoPlay 
             infiniteLoop 
-            showArrows={true} 
+            showArrows={false} 
             showStatus={false} 
             showIndicators={false}
           >

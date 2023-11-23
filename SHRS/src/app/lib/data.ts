@@ -127,7 +127,7 @@ export const socials = [
 
 export const contacts = [
   { 
-    title: "Address", 
+    title: "Office address", 
     details: {
       street: "50 Abimbola street Seaside Estate Badore Ajah",
       city: "Ajah, Lagos State",
@@ -135,7 +135,7 @@ export const contacts = [
     },
   },
   { 
-    title: "24/7 Quick Response", 
+    title: "24/7 quick response", 
     details: {
       phone: '08023378995',
       mobile: '07030873672',
@@ -143,11 +143,11 @@ export const contacts = [
     },
   },
   { 
-    title: "Working Hours", 
+    title: "Working hours", 
     details: {
-      mon_fri: '7am to 6pm',
-      Sat: '10.00am to 16.00pm',
-      Sun: 'We are Closed',
+      "mon-fri": '7am to 6pm',
+      sat: '10.00am to 16.00pm',
+      sun: 'We are Closed',
     },
   }
   
