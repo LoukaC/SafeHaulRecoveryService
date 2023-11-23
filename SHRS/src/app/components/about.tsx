@@ -1,12 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import SectionHeading from './section-heading'
 import { competences, skills } from '../lib/data'
 import Skill from './skill'
 import Competence from './competence'
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '../context/active-section-context'
+import { useSectionInView } from '../lib/hook'
 
 export default function About() {
+
+  const {ref} = useSectionInView('About', 0.5)
+
   return (
-    <section id='about' className='mx-5 mb-32 scroll-mt-36'>
+    <section ref={ref} id='about' className='mx-5 mb-32 scroll-mt-[7.2rem]'>
         <SectionHeading>About Us</SectionHeading>
         <div className='text-center'>
           <h3 className='capitalize text-xl mb-3 font-medium'>leading haulage company</h3>

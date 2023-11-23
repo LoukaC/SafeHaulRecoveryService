@@ -1,14 +1,18 @@
-
+'use client'
 import React from 'react'
 import CarouselSlider from './carousel-slider'
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { carrouselImages } from '../lib/data';
 import Image from 'next/image';
+import { useSectionInView } from '../lib/hook';
+
 
 
 export default function Home() {
+
+  const {ref} = useSectionInView("Home", 0.5)
+
   return (
-    <section id='home' className='flex justify-center items-center mb-32 pt-36 md:pt-24'>
+    <section id='home' ref={ref} className='flex justify-center items-center mb-32 pt-36 md:pt-24'>
         <CarouselSlider 
           useKeyboardArrows={true} 
           showThumbs={false} 

@@ -87,12 +87,12 @@ export const competences = [
   {
     title: "We are Trusted",
     icon: React.createElement(VscWorkspaceTrusted),
-    description: "We have made a great reputation for ourselves having been in the business for 10yrs, our services speaks for us. We specializes in a variety of haulage and car recovery services",
+    description: "We have made a great reputation for ourselves having been in the business for 10yrs, our services speaks for us. We specializes in a variety of haulage and car recovery services.",
   },
   {
     title: "We are Creative",
     icon: React.createElement(TfiRulerPencil),
-    description: "We have a unique and highly-technical approach to car haulage. We Pride ourselves with the fact that we have tremendous testimonies about services",
+    description: "We have a unique and highly-technical approach to car haulage. We Pride ourselves with the fact that we have tremendous testimonies about services.",
   },
 ] as const;
 

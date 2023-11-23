@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/header'
 import Footer from './components/footer'
+import './globals.css'
+import ActiveSectionContextProvider from './context/active-section-context'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,12 +15,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-orange-50 text-gray-950 flex flex-col justify-start items-center`}
+    <html lang="en" className='!scroll-smooth'>
+      <body className={`${inter.className} bg-radial-gradient flex flex-col justify-start items-center`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   )

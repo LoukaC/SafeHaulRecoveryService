@@ -6,13 +6,17 @@ import { links } from '../lib/data'
 import Link from 'next/link'
 import MenuButton from './menu-button'
 import { motion } from 'framer-motion'
+import clsx from 'clsx'
+import { useActiveSectionContext } from '../context/active-section-context'
 
 export default function Header() {
+
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className='fixed z-10 flex justify-center items-center w-full bg-orange-50 h-24 '>
+    <header className='fixed top-0 z-10 flex justify-center items-center w-full h-24 bg-white'>
         <nav className='flex-col w-[60rem] h-24'>
             <div className='flex flex-row justify-between items-center h-full'>
                 <Link href='/'>
@@ -28,7 +32,17 @@ export default function Header() {
                     <ul className='hidden text-sm md:flex gap-2 mr-6 md:gap-4 md:text-lg transition '>
                         {links.map(link => (
                             <li key={link.hash}>
-                                    <Link href={link.hash}>
+                                    <Link 
+                                        href={link.hash}
+                                        className={clsx({
+                                            'text-amber-500': activeSection === link.name,
+                                        })}
+                                        onClick={() => {
+                                            setActiveSection(link.name), 
+                                            setTimeOfLastClick(Date.now())
+                                        }
+                                        }
+                                    >
                                         {link.name}
                                     </Link> 
                                 </li>       
@@ -48,16 +62,22 @@ export default function Header() {
              <motion.div 
                 className={
                    isOpen 
-                    ? 'h-12 z-10 bg-orange-200 rounded-lg shadow-md -mt-4' 
+                    ? 'h-12 z-10 rounded-lg shadow-md -mt-8 bg-white' 
                     : 'hidden'}
-                initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -100 }}   
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -10 }}   
             >   
                 <div className='h-full w-full flex justify-center items-center'>
                     <ul className='w-full flex justify-center items-center gap-4 text-sm'>
                         {links.map(link => (
                             <li key={link.hash}>
-                                <Link href={link.hash}>
+                                <Link 
+                                    href={link.hash} 
+                                    className={clsx({
+                                        'text-amber-500': activeSection === link.name,
+                                    })}
+                                    onClick={() => setActiveSection(link.name)}
+                                >
                                     {link.name}
                                 </Link> 
                             </li>
