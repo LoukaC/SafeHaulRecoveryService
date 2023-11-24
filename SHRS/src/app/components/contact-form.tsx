@@ -1,10 +1,12 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import SubmitBtn from './submit-btn'
-import ContactBox from './contact-details'
-import { contacts } from '../lib/data'
+import { sendEmail } from '../actions/sendEmail'
+import toast from 'react-hot-toast'
 
 export default function ContactForm() {
+  
+
   return (
     <div className='mb-20 w-full flex flex-col justify-center items-center'>
       <SectionHeading>Contact us</SectionHeading>
@@ -14,8 +16,16 @@ export default function ContactForm() {
         Please fill the form below to get started.
       </p>
       <form 
-            className='mt-14 flex flex-col w-[min(90%,38rem)] ' 
-            action=""
+          className='mt-14 flex flex-col w-[min(90%,38rem)] ' 
+          action={async (formData) => {
+            const {data, error} = await sendEmail(formData)
+            
+            if(error) {
+                    toast.error(error)
+                    return
+                }
+                toast.success("Email sent successfully!")
+          }}
         >
             <input 
                 name='senderEmail'
@@ -26,7 +36,7 @@ export default function ContactForm() {
                 className='h-14 border border-black/10 rounded-lg p-4 outline-none'
             />
             <input 
-                name='phoneNumber'
+                name='senderPhoneNumber'
                 type='tel'
                 placeholder='Your phone number'
                 required
