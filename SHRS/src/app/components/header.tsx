@@ -16,7 +16,7 @@ export default function Header() {
     const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className='fixed top-0 z-10 flex justify-center items-center w-full h-24 bg-white'>
+    <header className='fixed top-0 z-10 flex justify-center items-center w-full h-24 bg-color'>
         <nav className='flex-col w-[60rem] h-24'>
             <div className='flex flex-row justify-between items-center h-full'>
                 <Link href='/'>
@@ -35,7 +35,7 @@ export default function Header() {
                                     <Link 
                                         href={link.hash}
                                         className={clsx({
-                                            'text-amber-500': activeSection === link.name,
+                                            'primary-color': activeSection === link.name,
                                         })}
                                         onClick={() => {
                                             setActiveSection(link.name), 
@@ -62,7 +62,7 @@ export default function Header() {
              <motion.div 
                 className={
                    isOpen 
-                    ? 'h-12 z-10 rounded-lg shadow-md -mt-8 bg-white' 
+                    ? 'h-12 z-10 rounded-lg shadow-md -mt-6 bg-white' 
                     : 'hidden'}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -10 }}   
@@ -74,7 +74,7 @@ export default function Header() {
                                 <Link 
                                     href={link.hash} 
                                     className={clsx({
-                                        'text-amber-500': activeSection === link.name,
+                                        'primary-color': activeSection === link.name,
                                     })}
                                     onClick={() => setActiveSection(link.name)}
                                 >

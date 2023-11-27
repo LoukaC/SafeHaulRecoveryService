@@ -10,7 +10,7 @@ export default function Footer() {
                     key={social.name} 
                     href={social.ref} 
                     target='_blank' 
-                    className=''
+                    className='secondary-color hover-primary-color'
                 >
                     {social.icon}
                 </a>

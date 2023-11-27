@@ -18,10 +18,10 @@ export default function About() {
         <div className='text-center'>
           <h3 className='capitalize text-xl mb-3 font-medium'>leading haulage company</h3>
           <p className='mb-5'>
-            <span className="font-bold">SHRS</span>{" "}
-             is a <span className="font-bold">professional car haulage</span>{" "}
+            <span className="font-bold primary-color">SHRS</span>{" "}
+             is a <span className="font-bold primary-color ">professional car haulage</span>{" "}
              and vehicle recovery service with{" "}
-            <span className="font-bold">over 10 years experience</span>{" "}
+            <span className="font-bold primary-color">over 10 years experience</span>{" "}
           in the car haulage industry.
           </p>
         </div>

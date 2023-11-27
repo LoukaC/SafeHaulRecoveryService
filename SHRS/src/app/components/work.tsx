@@ -15,7 +15,7 @@ export default function Work() {
   return (
     <section ref={ref} id='work' className='flex-col justify-center items-center mb-32 scroll-mt-[7.2rem]'>
         <SectionHeading>Our work</SectionHeading>
-        <div className='flex flex-col justify-center items-center gap-10 md:gap-28 md:flex-row'>
+        <div className='flex flex-col justify-center items-center gap-10 md:gap-28 md:flex-row px-2'>
           <CarouselSliderWork title='our deliveries' ListToMap={deliveries} />
           <CarouselSliderWork title='our testimonies' ListToMap={testimonies} />
       </div>

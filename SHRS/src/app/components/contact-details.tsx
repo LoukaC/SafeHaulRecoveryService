@@ -14,11 +14,11 @@ type ContactBoxProps = {
 
 export default function ContactDetails({title, details} : ContactBoxProps) {
   return (
-    <div className='bg-gray-200 border w-[18rem] h-[9.5rem] flex flex-col justify-start pl-3 pt-1 rounded-xl '>
-        <h3 className='text-center font-medium capitalize mb-4 text-orange-600'>{title}</h3>
+    <div className='bg-secondary-color border w-[18rem] h-[10em] flex flex-col justify-start pl-3 pt-2 rounded-xl '>
+        <h3 className='text-center font-medium capitalize mb-4 primary-color'>{title}</h3>
         <ul>
         {details.map((detail: Detail) => (
-          <li key={detail.name} className='capitalize leading-6 pb-1'>
+          <li key={detail.name} className='capitalize leading-6 pb-1 text-white'>
             <strong>{detail.name}:</strong> {detail.value}
           </li>
         ))}

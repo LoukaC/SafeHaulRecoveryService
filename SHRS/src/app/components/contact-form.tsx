@@ -11,9 +11,13 @@ export default function ContactForm() {
     <div className='mb-20 w-full flex flex-col justify-center items-center'>
       <SectionHeading>Contact us</SectionHeading>
       <p className='text-center' >
-        We are always ready to help you with your deliveries and logistics needs. 
+        We are <span className="font-bold primary-color ">always ready to help</span>{" "}
+        you with your <span className="font-bold primary-color ">deliveries</span>{" "}
+        and{" "}
+        <span className="font-bold primary-color ">logistics needs</span>. 
         <br />
-        Please fill the form below to get started.
+        Please fill <span className="font-bold primary-color ">the form</span>{" "}
+        below to get started.
       </p>
       <form 
           className='mt-14 flex flex-col w-[min(90%,38rem)] ' 

@@ -33,7 +33,7 @@ export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWor
                   <Image 
                     src={list.imageUrl} 
                     alt={list.name} 
-                    className='object-cover h-96 rounded-xl'                  
+                    className='object-cover  h-72 md:h-96 rounded-xl'                  
                 />
               </div>
           ))
