@@ -34,7 +34,7 @@ export default function About() {
             ))
           }
         </div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center gap-5'>
           {
             competences.map((competence,index) => (
               <React.Fragment key={index}>
