@@ -25,6 +25,10 @@
   background-color: #363636
 }
 
+.hover-secondary-color-text:hover {
+  color: #363636
+}
+
 .hover-primary-color:hover {
-  color: #FF9226
+  background-color: #FF9226
 }
