@@ -6,6 +6,7 @@ import Footer from './components/footer'
 import './globals.css'
 import ActiveSectionContextProvider from './context/active-section-context'
 import { Toaster } from 'react-hot-toast'
+import TopBtn from './components/top-btn'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           {children}
           <Footer />
           <Toaster position='top-right'/>
+          <TopBtn />
         </ActiveSectionContextProvider>
       </body>
     </html>
