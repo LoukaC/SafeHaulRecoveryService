@@ -29,7 +29,12 @@ export default function Header() {
                         className='cursor-pointer'
                     />
                 </Link>
-                    <ul className='hidden text-sm md:flex gap-2 mr-6 md:gap-4 md:text-lg transition '>
+                    <motion.ul 
+                        className='hidden text-sm md:flex gap-2 mr-6 md:gap-4 md:text-lg transition'
+                        initial={{opacity: 0, y: -100}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.01}}
+                    >
                         {links.map(link => (
                             <li key={link.hash}>
                                     <Link 
@@ -47,7 +52,7 @@ export default function Header() {
                                     </Link> 
                                 </li>       
                         ))}
-                    </ul>
+                    </motion.ul>
                     <MenuButton className='md:hidden mr-4 cursor-pointer'
                         isOpen={isOpen}
                         onClick={() => setOpen(!isOpen)}
