@@ -11,7 +11,7 @@ export default function Contact() {
   const {ref} = useSectionInView('Contact', 0.5)
 
   return (
-    <section id='contact' ref={ref} className='scroll-mt-[7.2rem] mb-20 w-full flex flex-col justify-center items-center '>
+    <section id='contact' ref={ref} className='scroll-mt-[7.5rem] mb-20 w-full flex flex-col justify-center items-center '>
         <ContactForm />
         <ContactList />  
     </section>

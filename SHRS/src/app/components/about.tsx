@@ -13,7 +13,7 @@ export default function About() {
   const {ref} = useSectionInView('About', 0.5)
 
   return (
-    <section ref={ref} id='about' className='mx-5 mb-32 scroll-mt-[7.2rem]'>
+    <section ref={ref} id='about' className='mx-5 mb-32 scroll-mt-[7.5rem]'>
         <SectionHeading>About Us</SectionHeading>
         <div className='text-center'>
           <h3 className='capitalize text-xl mb-3 font-medium'>leading haulage company</h3>
@@ -25,7 +25,7 @@ export default function About() {
           in the car haulage industry.
           </p>
         </div>
-        <div className='flex flex-wrap gap-5 justify-center mb-5'>
+        <div className='flex flex-wrap gap-5 justify-center mb-20'>
           {
             skills.map((skill,index) => (
               <React.Fragment key={index}>

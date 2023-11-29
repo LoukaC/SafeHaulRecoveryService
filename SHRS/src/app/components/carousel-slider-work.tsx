@@ -15,8 +15,7 @@ type CarouselSliderWorkProps = {
 
 export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWorkProps) {
   return (
-    <div>
-        <h3 className='capitalize text-center font-medium mb-3'>{title}</h3>
+    <div className='bg-secondary-color p-5 pb-3 rounded-3xl flex-col flex gap-2'>
         <CarouselSlider 
             useKeyboardArrows={true} 
             showThumbs={false} 
@@ -33,12 +32,13 @@ export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWor
                   <Image 
                     src={list.imageUrl} 
                     alt={list.name} 
-                    className='object-cover  h-72 md:h-96 rounded-xl'                  
+                    className='object-cover h-72 md:h-96 rounded-xl'                  
                 />
               </div>
           ))
           }
         </CarouselSlider>
+         <h3 className='capitalize text-center font-medium primary-color'>{title}</h3>
     </div>
   )
 }
