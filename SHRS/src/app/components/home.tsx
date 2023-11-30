@@ -14,7 +14,7 @@ export default function Home() {
   const {ref} = useSectionInView("Home", 0.5)
 
   return (
-    <section id='home' ref={ref} className='relative  flex-col md:flex-row flex justify-center items-center gap-5 mb-32 pt-32 md:pt-28 w-full'>
+    <section id='home' ref={ref} className='relative  flex-col md:flex-row flex justify-center items-center gap-5 mb-48 sm:mb-60 w-full scroll-mt-[12rem]'>
       <div className='md:w-[30%] flex flex-col justify-center items-center '>
           <motion.h1 
             className='text-2xl md:text-4xl font-bold text-amber-500 md:mb-2 text-center'
