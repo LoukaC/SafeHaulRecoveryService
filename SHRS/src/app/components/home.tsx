@@ -41,7 +41,7 @@ export default function Home() {
           </motion.div>
       </div>
       <motion.div 
-        className=' w-[90%] md:w-[60%] md:max-w-[35rem] bg-secondary-color flex justify-center items-center rounded-3xl p-5 shadow-xl shadow-black/20'
+        className=' w-[90%] md:w-[60%] md:max-w-[35rem] bg-secondary-color flex justify-center items-center rounded-xl p-5 shadow-xl shadow-black/20'
         initial={{opacity: 0, x: 100}}
         animate={{opacity: 1, x: 0}}
         transition={{duration: 0.1}}  

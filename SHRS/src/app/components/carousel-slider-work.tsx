@@ -15,7 +15,7 @@ type CarouselSliderWorkProps = {
 
 export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWorkProps) {
   return (
-    <div className='bg-secondary-color p-5 pb-3 rounded-3xl flex-col flex gap-2 shadow-xl shadow-black/20'>
+    <div className='bg-secondary-color p-5 pb-3 rounded-xl flex-col flex gap-2 shadow-xl shadow-black/20'>
         <CarouselSlider 
             useKeyboardArrows={true} 
             showThumbs={false} 
