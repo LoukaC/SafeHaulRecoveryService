@@ -11,6 +11,7 @@ export default function Footer() {
                     href={social.ref} 
                     target='_blank' 
                     className='secondary-color hover-primary-color-text'
+                    aria-label={social.name}
                 >
                     {social.icon}
                 </a>

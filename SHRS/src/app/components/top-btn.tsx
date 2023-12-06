@@ -12,8 +12,12 @@ export default function TopBtn() {
     <button 
         className='fixed bottom-5 right-2 bg-white w-[2rem] h-[2rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-md rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all md:w-[3rem] md:h-[3rem]'
         style={{display: showButton ? 'flex' : 'none'}}
+        aria-label='Scroll to top'
     >
-        <a href="#home">
+        <a 
+          href="#home"
+          aria-label="back to home section"
+        >
             <IoIosArrowUp />
         </a>
     </button>

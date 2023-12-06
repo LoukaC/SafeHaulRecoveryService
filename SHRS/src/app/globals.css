@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .bg-color {
-  background: #F3F3F3
+  background: white
 }
 
 .primary-color {
-  color: #FF9226
+  color: #fb850f
 }
 
 .secondary-color {
@@ -15,7 +15,7 @@
 }
 
 .bg-primary-color {
-  background: #FF9226
+  background: #fb850f
 }
 .bg-secondary-color{
   background-color: #363636
@@ -30,9 +30,9 @@
 }
 
 .hover-primary-color:hover {
-  background-color: #FF9226
+  background-color: #fb850f
 }
 
 .hover-primary-color-text:hover {
-  color: #FF9226
+  color: #fb850f
 }

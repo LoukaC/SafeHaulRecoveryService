@@ -2,8 +2,6 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import { competences, skills } from '../lib/data'
-import Skill from './skill'
-import Competence from './competence'
 import { useSectionInView } from '../lib/hook'
 import { motion } from 'framer-motion'
 import Accordion from '@mui/material/Accordion';
@@ -88,8 +86,8 @@ export default function About() {
                 <Accordion className='bg-primary-color max-w-[50rem] rounded-xl text-left secondary-color'>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id={competence.title}
+                    aria-controls={`panel1${index}-content`}
+                    id={`panel1${index}a-header`}
                     className=''
                   >
                     <div className='flex items-center text-4xl text-white'>
@@ -100,10 +98,8 @@ export default function About() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails className='flex justify-center items-center gap-4'>
-                    <Typography className='text-justify text-md leading-6'>
-                      
+                    <Typography className='text-justify text-md leading-6'> 
                         {competence.description}
-                      
                     </Typography>
                   </AccordionDetails>
                 </Accordion>

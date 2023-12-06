@@ -32,7 +32,12 @@ export default function CarouselSliderWork({title, ListToMap}: CarouselSliderWor
                   <Image 
                     src={list.imageUrl} 
                     alt={list.name} 
-                    className='object-cover h-72 md:h-96'                  
+                    className='object-cover h-72 md:h-96'
+                    width={200}
+                    height={200}
+                    loading="eager"
+                    sizes='(max-width: 768px) 100vw, 200px'
+                    priority={false}                 
                 />
               </div>
           ))

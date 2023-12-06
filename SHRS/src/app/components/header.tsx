@@ -19,14 +19,16 @@ export default function Header() {
     <header className='fixed top-0 z-10 flex justify-center items-center w-full h-24 bg-color'>
         <nav className='flex-col w-[60rem] h-24'>
             <div className='flex flex-row justify-between items-center h-full'>
-                <Link href='/'>
+                <Link href='#home'>
                     <Image 
-                        src='/logo.png' 
+                        src='/logo.webp' 
                         alt='logo SHRS' 
-                        width={250} 
+                        width={200} 
                         height={100} 
-                        priority={true} 
-                        className='cursor-pointer'
+                        priority
+                        className='cursor-pointer w-auto h-auto'
+                        loading='eager'
+                        sizes='(max-width: 768px) 100vw, 200px'
                     />
                 </Link>
                     <motion.ul 

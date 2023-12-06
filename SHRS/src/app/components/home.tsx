@@ -65,7 +65,10 @@ export default function Home() {
                     alt={image.alt} 
                     className='h-[20rem] object-cover'
                     width={200}
-                    height={200} 
+                    height={200}
+                    loading="eager"
+                    sizes='(max-width: 768px) 100vw, 200px'
+                    priority={false} 
                   />
               </div>
           ))
