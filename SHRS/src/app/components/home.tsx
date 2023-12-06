@@ -22,7 +22,7 @@ export default function Home() {
             animate={{opacity: 1, x: 0}}
             transition={{duration: 0.1}}
           >
-            Safe Haul Recovery Service
+            ATK AUTO HAULAGE
           </motion.h1>
           <motion.p 
             className='text-xl md:text-xl font-bold secondary-color text-center mb-5 md:mb-10'

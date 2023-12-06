@@ -19,7 +19,7 @@ export default function Footer() {
             }
         </p>
         <small className=' text-xs block'>
-            © 2023 SHRS. All rights reserved.
+            © 2023 ATK AUTO HAULAGE. All rights reserved.
         </small>
     </footer>
   )

@@ -44,7 +44,7 @@ export default function About() {
         >
           <h3 className='capitalize text-xl mb-5 font-medium'>leading haulage company</h3>
           <p className='mb-10'>
-            <span className="font-bold primary-color">SHRS</span>{" "}
+            <span className="font-bold primary-color">ATK AUTO HAULAGE</span>{" "}
              is a <span className="font-bold primary-color ">professional car haulage</span>{" "}
              and vehicle recovery service with{" "}
             <span className="font-bold primary-color">over 10 years experience</span>{" "}
