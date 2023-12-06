@@ -11,8 +11,8 @@ import TopBtn from './components/top-btn'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Safe Haul Recovery Service',
-  description: 'Safe Haul Recovery Service is a professional car haulage and vehicle recovery service with over 10 years experience',
+  title: 'ATK AUTO HAULAGE',
+  description: 'ATK Auto Haulage is a professional car haulage and vehicle recovery service with over 10 years experience',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
